@@ -1,0 +1,13 @@
++91 xxxxx xxxxx
+
+
+nActual=int(raw_input())
+ar=[]
+for eN in range(0,nActual):
+    tmp=raw_input()
+    tmp=tmp[len(tmp)-10:]
+    ar.append(tmp)
+    
+ar.sort()
+for i in range(0,len(ar)):
+    print "+91 "+ar[i][:5]+" "+ar[i][5:]
